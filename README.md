@@ -54,6 +54,13 @@ The library has the following methods:
 	- `cursor`: (bool) set the cursor on (True) or off (False)
 	- `blink`: (bool) set the blink option on (True) or off (False)
 	- example: ```lcd.cursorMode(True,False)``` display the cursor, but it doesn't blink
+- `setCursorPosition(row, col)`: Set the cursor position to <row>,<col>
+	- `row`: (int) row number (0 or 1)
+	- `col`: (int) col number (0 to 39)
+	- example: ```lcd.setCursorPosition(1,4)``` sets the cursor on the 2nd line (row=1) and 5th column
+- `saveCursorPosition()`: save the cursor position
+- `restorCursorPosition()`: restore the cursor position
+		previously saved with `saveCursorPosition`
 
 
 THe other methods are detailed in the comments of the file `pyPmodCLS.py`
